@@ -1,0 +1,131 @@
+body {
+    background-image: url("https://wallpapers.com/images/hd/minecraft-grass-b3ruyee6ffjnguj2.jpg");
+    background-size: cover;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial Black', 'Inter', sans-serif; 
+}
+
+.main-container {
+    width: 100%;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    align-items: center;
+    padding: 40px;
+}
+
+.site-header .title {
+    color: white;
+    text-align: center;
+    font-size: 5em;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.section-container {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-grow: 1;
+    margin-left: 40%;
+    margin-top: 4%;
+    margin-bottom: 8%;
+}
+
+.image-section {
+    width: 300px;
+    height: 300px;
+    background-color: #b3b3b3; 
+    border: 8px solid #808080;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 0 0 20px rgba(0,0,0,0.2);
+}
+
+.block-image {
+    max-width: 80%;
+    image-rendering: pixelated;
+}
+
+
+.roll-section {
+    text-align: center;
+    margin-left: 10%;
+}
+
+.button-text {
+    color: white;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 0px #000;
+}
+
+.roll-button {
+    background: linear-gradient(to bottom, #a7f3d0, #5eead4);
+    border: none;
+    padding: 15px 40px;
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: white;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 4px 0px #14b8a6;
+    transition: transform 0.1s;
+}
+
+.roll-button:active {
+    transform: translateY(4px);
+    box-shadow: none;
+}
+
+.crafting-text {
+    color: white;
+    font-size: 3em;
+    text-align: center;
+    margin-top: 20px;
+    line-height: 1.4;
+    text-transform: uppercase;
+}
+
+h3 {
+    color: white;
+    text-shadow: 2px 2px 0px #000;
+}
+
+@media (max-width: 768px) {
+    .main-container {
+        height: auto;
+        min-height: 90vh;
+        width: 350px; 
+    }
+
+    .section-container {
+        flex-direction: column; 
+    }
+
+    .roll-section {
+        order: 1;
+        margin-bottom: 30px;
+    }
+
+    .image-section {
+        order: 2;
+        width: 200px;
+        height: 200px;
+    }
+
+    .crafting-text {
+        order: 3;
+        font-size: 1rem;
+    }
+}
